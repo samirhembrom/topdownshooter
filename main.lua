@@ -1,7 +1,7 @@
 function love.load()
 	math.randomseed(os.time())
 
-	love.window.setMode(800, 600, { resizable = true, vsync = 0, minwidth = 400, minheight = 300 })
+	love.window.setFullscreen(true, "exclusive")
 
 	sprites = {}
 	sprites.background = love.graphics.newImage("sprites/background.png")
