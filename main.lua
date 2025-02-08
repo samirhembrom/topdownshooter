@@ -194,7 +194,7 @@ function spawnZombie()
 	zombie.speed = 140
 	zombies.dead = false
 
-	local side = math.random(1, 4)
+	local side = math.random(0, 5)
 	if side == 1 then
 		zombie.x = -30
 		zombie.y = math.random(0, love.graphics.getHeight())
@@ -202,11 +202,11 @@ function spawnZombie()
 		zombie.x = love.graphics.getWidth() + 30
 		zombie.y = math.random(0, love.graphics.getHeight())
 	elseif side == 3 then
-		zombies.x = math.random(0, love.graphics.getWidth())
-		zombies.y = -30
+		zombie.x = math.random(0, love.graphics.getWidth())
+		zombie.y = -30
 	elseif side == 4 then
-		zombies.x = math.random(0, love.graphics.getWidth())
-		zombies.y = love.graphics.getHeight() + 30
+		zombie.x = math.random(0, love.graphics.getWidth())
+		zombie.y = love.graphics.getHeight() + 30
 	end
 	table.insert(zombies, zombie)
 end
