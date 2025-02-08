@@ -194,7 +194,7 @@ function spawnZombie()
 	zombie.speed = 140
 	zombies.dead = false
 
-	local side = math.random(0, 5)
+	local side = math.random(1, 4)
 	if side == 1 then
 		zombie.x = -30
 		zombie.y = math.random(0, love.graphics.getHeight())
